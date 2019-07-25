@@ -1,0 +1,11 @@
+version: '3'
+services:
+  shadowsocks:
+    image: shadowsocks/shadowsocks-libev
+    ports:
+      - "1080:8388/tcp"
+      - "1080:8388/udp"
+    environment:
+      - METHOD=rc4-md5
+      - PASSWORD=password
+    restart: always
