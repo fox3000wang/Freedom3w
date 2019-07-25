@@ -78,9 +78,48 @@ services:
 
 ```
 docker-compose up -d
+
+# have fun !
 ```
 
 ## 叁.客户端
 
-### 3.1桌面端
+### 安装
 * mac端
+  
+  https://github.com/shadowsocks/ShadowsocksX-NG/releases
+
+* windows
+
+  https://github.com/shadowsocks/shadowsocks-windows/releases
+
+* Android
+
+  https://github.com/shadowsocks/shadowsocks-android/releases
+
+* IOS（由于app在国区被下架，所以最麻烦）
+
+  * 注册或者某包购买一个美国的苹果ID。 买一个不超过10块钱，省时间。
+  * 退出App Store，不是iCloud， 登录上面的id。
+  * 然后搜索 Potatso Lite
+
+
+### 配置
+
+* 服务器
+  这个在aws的管理页面，和那个公网ip一致
+
+* 端口
+  和配置里ports左边的保持一致，默认1080
+
+* 加密
+  和配置里METHOD保持一致
+
+* 密码
+  和配置里的PASSWORD保持一致  
+
+![](assets/config.png)
+
+### 测试
+看到这个页面，恭喜你自由了。
+![](assets/google.jpeg)
